@@ -1,0 +1,181 @@
+/*
+=====================================
+  Estilos Gerais (Reset e Configurações Básicas)
+=====================================
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Garante que padding e border não aumentem o tamanho do elemento */
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f9; /* Fundo cinza claro suave */
+    color: #333; /* Texto escuro */
+}
+
+a {
+    text-decoration: none; /* Remove sublinhado dos links */
+    color: #007bff; /* Azul primário para links */
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto; /* Centraliza o conteúdo principal */
+}
+
+/*
+=====================================
+  Header e Navegação
+=====================================
+*/
+header {
+    background-color: #007bff; /* Azul vibrante (cor principal) */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 5px;
+}
+
+header p {
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex; /* Alinha os itens da navegação lado a lado */
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Fundo levemente branco ao passar o mouse */
+    text-decoration: none;
+}
+
+/*
+=====================================
+  Seções Principais
+=====================================
+*/
+section {
+    background-color: white;
+    padding: 30px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+section h2 {
+    color: #007bff;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+section h3 {
+    color: #333;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+/* Estilo para a imagem da ONG */
+#institucional figure {
+    float: right; /* Flutua a figura para a direita */
+    margin-left: 20px;
+    text-align: center;
+}
+
+#institucional img {
+    border-radius: 50%; /* Torna a imagem circular */
+    border: 3px solid #007bff;
+}
+
+#institucional figcaption {
+    font-style: italic;
+    color: #555;
+    margin-top: 5px;
+}
+
+/* Limpa o float após o elemento flutuado */
+#institucional:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*
+=====================================
+  Seção de Apoio (Chamada para Ação)
+=====================================
+*/
+#apoie-nos {
+    text-align: center;
+    background-color: #28a745; /* Verde para destacar a ação */
+    color: white;
+    padding: 40px;
+}
+
+#apoie-nos h2, #apoie-nos p {
+    color: white;
+    border-bottom: none;
+}
+
+#apoie-nos a {
+    display: inline-block;
+    background-color: white;
+    color: #28a745;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 10px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#apoie-nos a:hover {
+    background-color: #eee;
+    transform: translateY(-2px); /* Efeito sutil ao passar o mouse */
+    text-decoration: none;
+}
+
+/*
+=====================================
+  Footer
+=====================================
+*/
+footer {
+    background-color: #333; /* Fundo escuro */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+footer address p {
+    margin: 5px 0;
+}
